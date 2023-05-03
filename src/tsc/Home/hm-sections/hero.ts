@@ -18,7 +18,7 @@ Template_2.innerHTML = `
 
     <div class="hero--overlay--container">
         <p>Fellowship with us every <em>Thursday</em> and <em>Friday</em></p>
-        <p>Live on youtube <i class="fa-brands fa-youtube"></i></p>
+        <p>Live on youtube <a href="https://www.youtube.com/@ndejjecollective"><i class="fa-brands fa-youtube"></i></a></p>
     </div>
 </div>
 `

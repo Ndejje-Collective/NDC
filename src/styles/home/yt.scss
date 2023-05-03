@@ -30,6 +30,7 @@ hm-yt {
                 height: 650px;
                 @include flex-box--column();
                 justify-content: center;
+                cursor: pointer;
 
                 //join us...
                 .yt-grid--link_header {
@@ -59,11 +60,12 @@ hm-yt {
                     width: 400px;
                     height: 400px;
 
+                
                     .svg-inline--fa {
                         cursor: pointer;
-                        width: 35px;
-                        height: 35px; 
-                        color: #fb1919;
+                        width: 50px;
+                        height: 50px; 
+                        color: $color--white;
                     }
                 }
             }

@@ -69,12 +69,19 @@ hm-hero {
                     color: $color--lime--green;
                 }
 
-                .svg-inline--fa {
-                    margin-left: 7px;
-                    cursor: pointer;
-                    width: 25px;
-                    height: 25px; 
+                a {
+                    text-decoration: none;
+                    color: $color--white;
+
+                    .svg-inline--fa {
+                        margin-left: 7px;
+                        cursor: pointer;
+                        width: 25px;
+                        height: 25px; 
+                    }
                 }
+
+
             }
         }
     }

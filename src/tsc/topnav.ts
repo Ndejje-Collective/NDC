@@ -19,14 +19,14 @@ Template_1.innerHTML = `
         <div class="top-navigation--links">
             <button>Home</button>
             <button>About</button>
-            <button is="nav-blog">Blog</button>
+            <button>Blog</button>
         </div>
 
         <!---the social media links-->
         <div class="social-media-links">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
+            <a href="https://www.facebook.com/107133335446370/posts/107135632112807/?substory_index=0&app=fbl"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/ndejjecollective/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/NDC_official1?t=aRqYZt1R2xVc1TL8iNtUYQ&s=08"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </div>
 `

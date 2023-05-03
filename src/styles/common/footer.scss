@@ -168,7 +168,7 @@ ft-footer {
 
             .logo--txt {
                 @include flex-box--column();
-                @include font--light();
+                font-family: 'Inter-extraLight';
                 font-weight: 900;
                 color: $color--white;
             }
@@ -183,7 +183,6 @@ ft-footer {
                 font-family: 'Inter-Medium', sans-serif;
                 em {
                     color: $color--lime--green;
-                    cursor: pointer;
                 }
             }
         }

@@ -14,7 +14,7 @@ top-navigation {
             margin-left: 130px;
             color: $color--darker--green;
             @include flex-box--row();
-            @include font--light();
+            font-family: 'Inter-extraLight';
             font-weight: 900;
 
 

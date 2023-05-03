@@ -12,9 +12,7 @@ Template_4.innerHTML = `
         <div class="primary-container--top">
             <div class="pri-container--top--img_left"></div>
             <div class="pri-container--top-text_right">
-                <p>Nulla vel sodales tellus, quis condimentum enim. Nunc porttitor venenatis feugiat.Etiam quis faucibus erat, non accumsan leo. Aliquam erat volutpat. Vestibulum ac faucibus eros. Cras ullamcorper gravida tellus ut co
-                    To bring worship experience
-                </p> 
+                <p>We are ministers from Ndejje SS, past and present who unite for the cause of Christ seeking to spread the gospel through worship. </p> 
             </div>
         </div>
         <div class="primary-container--bottom">

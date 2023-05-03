@@ -11,7 +11,7 @@ Template_5.innerHTML = `
     <div class="yt-grid-container">
         <div class="yt-grid--link">
             <div class="yt-grid--link_header"><h2>JOIN US ON YOUTUBE</h2></div>
-            <div class="yt-grid--link_holder"><i class="fa-brands fa-youtube"></i></div>
+            <div class="yt-grid--link_holder"><a href="https://www.youtube.com/@ndejjecollective"><i class="fa-brands fa-youtube"></i></a></div>
         </div>
         <div class="yt-grid--images">
             <div class="yt-grid--img yt-grid--img_1"></div>

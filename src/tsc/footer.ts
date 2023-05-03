@@ -18,7 +18,7 @@ TemplateFooter.innerHTML = `
                 <div class="ft-social-media--twitter_txt"><i class="fa-brands fa-twitter"></i>
                     <p>Twitter</p>
                 </div>
-                <div class="ft-social-media--twitter_link"><a href="#">@ndejje collective</a></div>
+                <div class="ft-social-media--twitter_link"><a href="https://twitter.com/NDC_official1?t=aRqYZt1R2xVc1TL8iNtUYQ&s=08">@ndejje collective</a></div>
             </div>
         </div>
 
@@ -28,7 +28,7 @@ TemplateFooter.innerHTML = `
                 <div class="ft-social-media--ig_txt"><i class="fa-brands fa-instagram"></i>
                     <p>Instagram</p>
                 </div>
-                <div class="ft-social-media--ig_link"><a href="#">@ndejje collective</a></div>
+                <div class="ft-social-media--ig_link"><a href="https://www.instagram.com/ndejjecollective/">@ndejje collective</a></div>
             </div>
         </div>
 
@@ -38,7 +38,7 @@ TemplateFooter.innerHTML = `
                 <div class="ft-social-media--tiktok_txt"><i class="fa-brands fa-tiktok"></i>
                     <p>Tiktok</p>
                 </div>
-                <div class="ft-social-media--tiktok_link"><a href="#">@ndejje collective</a></div>
+                <div class="ft-social-media--tiktok_link"><a href="https://vm.tiktok.com/ZMYpMQPko/">@ndejje collective</a></div>
             </div>
         </div>
     </div>
