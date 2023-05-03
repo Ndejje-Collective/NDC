@@ -2,10 +2,10 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/tscBase/index.ts',
 
     module: {
@@ -86,7 +86,9 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
-        new FaviconsWebpackPlugin('./src/assets/favicon/favicon.ico'),
+        new FaviconsWebpackPlugin({
+            logo: './src/assets/favicon/favicon-32x32.png',
+        }),
         new HtmlWebpackPlugin({
             template: "./src/index.html"
         }),
