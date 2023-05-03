@@ -1,0 +1,45 @@
+/*
+    MAIN SCSS FILE
+    
+*/
+
+//BODY 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+//Top navigation
+@import './common/topnav.scss';
+
+
+/*
+    HOME PAGE
+*/
+//hero section
+@import './home/hero.scss';
+
+//mission section
+@import './home/mission.scss';
+
+
+//primary section
+@import './home/primary.scss';
+
+//youtube section
+@import './home/yt.scss';
+
+//commitment section
+@import './home/commitment.scss';
+
+//MESSAGE
+@import './home/message.scss';
+
+
+//Footer
+@import './common/footer.scss';

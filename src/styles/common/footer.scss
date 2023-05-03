@@ -1,0 +1,191 @@
+
+@import '../common/mixins.scss';
+@import '../common/visuals.scss';
+
+ft-footer {
+    .ft-social-media-container {
+        background-color: $color--darker--green;
+        
+        .ft-social-media--header {
+            h1 {
+                padding-top: 60px;
+                font-size: 20px;
+                text-align: center;
+                color: $color--white;
+                font-family: 'Inter-semiBold', sans-serif;
+            }
+        }
+
+        //content
+        .ft-social-media-content-container {
+            @include flex-box--row();
+
+            //for all social media accounts
+            .ft-social-media {
+                background-color: $color--white;
+                width: 400px;
+                height: 100px;
+                border-radius: 10px;
+                margin: 70px 30px;
+            }
+    
+            //twitter
+            .ft-social-media--twitter {
+                margin-left: 130px;
+                @include flex-box--column();
+    
+                .ft-social-media--twitter--container {
+                    @include flex-box--column();
+    
+                    .ft-social-media--twitter_txt {
+                        @include flex-box--row();
+                        margin: 10px 20px;
+    
+                        .svg-inline--fa {
+                            cursor: pointer;
+                            width: 30px;
+                            height: 30px; 
+                            color: #5ad2f4;
+                        }
+        
+                        p {
+                            margin-left: 10px;
+                            font-size: 17px;
+                            font-family: 'Inter-Medium' ,sans-serif;
+                        }
+                    }
+        
+                    .ft-social-media--twitter_link {
+                        margin: 10px 0;
+    
+                        a {
+                            font-size: 20px;  
+                            cursor: pointer;
+                            font-family: 'Inter-Medium';
+                        }
+                    }
+                }
+            }
+    
+            //instagram
+            .ft-social-media--instagram {
+                @include flex-box--column();
+    
+                .ft-social-media--instagram--container {
+                    @include flex-box--column();
+    
+                    .ft-social-media--ig_txt {
+                        @include flex-box--row();
+                        margin: 10px 20px;
+    
+                        .svg-inline--fa {
+                            cursor: pointer;
+                            width: 30px;
+                            height: 30px; 
+                            color: #c55555;
+                        }
+        
+                        p {
+                            margin-left: 10px;
+                            font-size: 17px;
+                            font-family: 'Inter-Medium';
+                        }
+                    }
+        
+                    .ft-social-media--ig_link {
+                        margin: 10px 0;
+    
+                        a {
+                            font-size: 20px;
+                            cursor: pointer;
+                            font-family: 'Inter-Medium';
+                        }
+                    }
+                }
+            }
+    
+            //tiktok
+            .ft-social-media--tiktok {
+                margin-right: 130px;
+                @include flex-box--column();
+    
+                .ft-social-media--tiktok--container {
+                    @include flex-box--column();
+    
+                    .ft-social-media--tiktok_txt {
+                        @include flex-box--row();
+                        margin: 10px 20px;
+    
+                        .svg-inline--fa {
+                            cursor: pointer;
+                            width: 30px;
+                            height: 30px; 
+                            color: #000000;
+                        }
+        
+                        p {
+                            margin-left: 10px;
+                            font-size: 17px;
+                            font-family: 'Inter-Medium';
+                        }
+                    }
+        
+                    .ft-social-media--tiktok_link {
+                        margin: 10px 0;
+    
+                        a {
+                            font-size: 20px;
+                            cursor: pointer;
+                            font-family: 'Inter-Medium', sans-serif;
+                        }
+                    }
+                }
+    
+            }
+        }
+
+
+    }
+
+    .ft-content-container {
+        background-color: $color--darker--green;
+        height: 200px;
+        padding: 0 130px;
+        @include flex-box--row();
+
+        .ft-logo-container {
+            color: $color--darker--green;
+            @include flex-box--row();
+
+            .logo {
+                background-image: url('../../assets/images/logo_ndc.png');
+                @include bg-image();
+    
+                margin-right: 2px;
+                width: 100px;
+                height: 100px;
+            }
+
+            .logo--txt {
+                @include flex-box--column();
+                @include font--light();
+                font-weight: 900;
+                color: $color--white;
+            }
+        }
+
+
+
+        .ft-social-email {
+            p {
+                font-size: 20px;
+                color: $color--white;
+                font-family: 'Inter-Medium', sans-serif;
+                em {
+                    color: $color--lime--green;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

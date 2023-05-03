@@ -1,0 +1,22 @@
+@import '../common/mixins.scss';
+@import '../common/visuals.scss';
+
+hm-commitment {
+    .info--commit {
+        background-color: $color--darker--green;
+        padding: 0 130px;
+
+        p {
+            padding: 25px 0;
+            text-align: center;
+            color: $color--white;
+            font-size: 23px;
+            font-family: 'Inter-Medium', sans-serif;
+
+            em {
+                cursor: pointer;
+                color: $color--lime--green;
+            }
+        }
+    }
+}

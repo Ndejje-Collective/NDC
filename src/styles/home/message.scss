@@ -1,0 +1,53 @@
+@import '../common/mixins.scss';
+@import '../common/visuals.scss';
+
+hm-message {
+    .info-msg-container {
+        padding: 80px 130px;
+        background-color: $color--white;
+
+        h1 {
+            margin-bottom: 80px;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Inter-semiBold', sans-serif;
+            color: $color--darker--green
+        }
+
+        .info-msg-content-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            .info-msg-content_text {
+                width: 500px;
+                margin-right: 20px;
+
+                h2 {
+                    margin: 60px 0;
+                    font-size: 23px;
+                    text-align: right;
+                    font-family: 'Inter-Medium', sans-serif;
+                    color: $color--darker--green;
+                }
+    
+                p {
+                    font-family: 'Inter-extraLight', sans-serif;
+                    font-size: 20px;
+                    text-align: right;
+                    color: $color--darker--green;
+                }
+            }
+    
+            .info-msg-content_picture {
+                margin-left: 20px;
+                height: 500px;
+                width: 500px;
+                background-image: url('../../assets/images/img12.jpg');
+                @include bg-image();
+            }
+        }
+
+
+    }
+}
