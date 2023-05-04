@@ -11,7 +11,7 @@ Template_3.innerHTML = `
 <div class="mission-container">
     <div class="mission--text">
         <h1>MISSION</h1>
-        <p>We unite to spread the love of Christ as we worship, praise and fellowship. We desire to inspire and encourage believers to continue to fight the good fight standing on the basis of faith and love.</p>
+        <p>To create a community of believers who are passionate about music and dedicated to spreading the message of God's love through their talents and skills. We aim to provide opportunities for growth, fellowship, and service, and to inspire others to use their gifts to serve the world around them.</p>
         <p><i class="fa-solid fa-quote-left"></i> I will praise you as long as I live, and in your name I will lift up my hands <i class="fa-solid fa-quote-right"></i> - Psalms 63:4</p>
     </div>
 </div>

@@ -50,8 +50,9 @@ hm-yt {
 
                     background-image: url('../../assets/images/img13.jpg');
                     @include bg-image();
-                    background-color: #808080;
+                    background-color: #ac9b9b;
                     background-blend-mode: multiply;
+                    border-radius: 5px;
                     
                     display: flex;
                     justify-content: center;
@@ -63,9 +64,13 @@ hm-yt {
                 
                     .svg-inline--fa {
                         cursor: pointer;
-                        width: 50px;
-                        height: 50px; 
-                        color: $color--white;
+                        width: 40px;
+                        height: 40px; 
+                        color: $color--darker--green;
+                        border-radius: 50%;
+                        background-color: #e1e1e1;
+                        padding: 15px;
+
                     }
                 }
             }
