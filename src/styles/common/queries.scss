@@ -657,7 +657,7 @@ SMALLER DEVICES
                 @include flex-box--row();
                 position: initial;
                 margin: 20px 25px;
-                background-color: $color--grey;
+                background-color: #def0d5;
 
                 .top-navigation--header {
                     display: none;
@@ -1120,6 +1120,7 @@ SMALLER DEVICES
             //timeline
             hm-timeline {
                 .timeline-section {
+                    height: 1000px;
                     /* Place the timelime to the left */
 
                     .timeline-container {
@@ -1254,6 +1255,7 @@ SMALLER DEVICES
 @media screen and (max-width: 320px) {
     top-navigation {
         .top-navigation {
+            background-color: #def0d5;
 
             .aria-visible {
                 display: initial;
