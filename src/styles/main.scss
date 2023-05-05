@@ -46,3 +46,10 @@ body {
 
 //Footer
 @import './common/footer.scss';
+
+
+/*
+    MEDIA QUERIES
+    //MUST BE THE LAST FILE IN THE MAIN.SCSS
+*/
+@import '../styles/common/queries.scss';

@@ -1,4 +1,4 @@
-let Template_7 = document.createElement('template');
+let Template_7 = document.createElement("template");
 Template_7.innerHTML = `
 <div class="timeline-section">
     <div class="timeline--header"><h1 id="timeline-head">KEEP UP TO DATE</h1></div>
@@ -23,13 +23,13 @@ Template_7.innerHTML = `
 `;
 
 export class Timeline extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    connectedCallback() {
-        this.appendChild(Template_7.content.cloneNode(true));
-    }
+  connectedCallback() {
+    this.appendChild(Template_7.content.cloneNode(true));
+  }
 }
 
-customElements.define('hm-timeline', Timeline);
+customElements.define("hm-timeline", Timeline);

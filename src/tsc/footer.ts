@@ -11,7 +11,6 @@ TemplateFooter.innerHTML = `
 <div class="ft-social-media-container">
     <div class="ft-social-media--header"><h1>CHECK OUT OUR OTHER PLATFORMS</h1></div>
     <div class="ft-social-media-content-container">
-        
         <!--twitter-->
         <div class="ft-social-media ft-social-media--twitter">
             <div class="ft-social-media--twitter--container">

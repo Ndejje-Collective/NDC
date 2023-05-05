@@ -64,11 +64,13 @@ hm-yt {
                 
                     .svg-inline--fa {
                         cursor: pointer;
-                        width: 40px;
-                        height: 40px; 
-                        color: #ff0000;
+                        width: 30px;
+                        height: 30px; 
+                        color: $color--white;
+                        //color: #ff0000;
                         border-radius: 50%;
-                        background-color: #e1e1e1;
+                        background-color: #ff0000;
+                        //background-color: #e1e1e1;
                         padding: 15px;
 
                     }
