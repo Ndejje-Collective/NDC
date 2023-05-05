@@ -989,6 +989,10 @@ SMALLER DEVICES
                 .yt-section-container {
                     .yt-grid-container {
 
+                        .yt-grid--link {
+                            border: none;
+                        }
+
                         //images
                         .yt-grid--images {
                             width: 100%;
@@ -1137,6 +1141,46 @@ SMALLER DEVICES
                 }
             }
 
+            //yt
+            hm-yt {
+                .yt-section-container {
+                    .yt-grid-container {
+                        .yt-grid--link {
+                            height: 480px;
+                            cursor: pointer;
+                            border: none;
+
+                            //join us...
+                            .yt-grid--link_header {
+                                margin: 30px 0;
+                                height: 60px;
+
+                                h2 {
+                                    font-size: 20px;
+                                    text-align: center;
+                                    color: $color--darker--green;
+                                    font-family: 'Inter-Medium', sans-serif;
+                                }
+                            }
+
+                            .yt-grid--link_holder {
+                                margin: 0 50px;
+                                width: 300px;
+                                height: 300px;
+
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                .svg-inline--fa {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
         }
 
 
@@ -1246,6 +1290,48 @@ SMALLER DEVICES
                 }
             }
 
+            //yt-section
+            // //yt
+            hm-yt {
+                .yt-section-container {
+                    .yt-grid-container {
+                        .yt-grid--link {
+                            border: none;
+                            height: 365px;
+                            cursor: pointer;
+                            width: auto;
+
+                            //join us...
+                            .yt-grid--link_header {
+                                margin: 30px 0;
+                                height: 60px;
+
+                                h2 {
+                                    font-size: 20px;
+                                    text-align: center;
+                                    color: $color--darker--green;
+                                    font-family: 'Inter-Medium', sans-serif;
+                                }
+                            }
+
+                            .yt-grid--link_holder {
+                                margin: 0 50px;
+                                width: 300px;
+                                height: 300px;
+
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                .svg-inline--fa {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
 
         }
     }
@@ -1255,7 +1341,7 @@ SMALLER DEVICES
 @media screen and (max-width: 320px) {
     top-navigation {
         .top-navigation {
-            background-color: #def0d5;
+
 
             .aria-visible {
                 display: initial;
@@ -1264,6 +1350,7 @@ SMALLER DEVICES
 
             .top-navigation-container {
                 padding: 0 15px;
+                background-color: #def0d5;
 
                 .social-media-links {
                     @include flex-box--row();
