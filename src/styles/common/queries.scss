@@ -99,6 +99,8 @@ SMALLER DEVICES
             //hero
             hm-hero {
                 .hero-container {
+                    background-image: url('../../assets/images/hero_small.png');
+                    @include bg-image();
                     width: 100%;
 
 
@@ -204,11 +206,11 @@ SMALLER DEVICES
             //yt
             hm-yt {
                 .yt-section-container {
-                    height: 2000px;
+                    height: 1645px;
 
                     //get the full....
                     .yt-section--header {
-                        padding: 100px 25px;
+                        padding: 100px 25px 5px 25px;
 
                         h1 {
                             text-align: center;
@@ -307,310 +309,6 @@ SMALLER DEVICES
     }
 }
 
-
-// @media screen and (max-width: 1024px) {
-
-//     //TOP NAVIGATION
-//     top-navigation {
-//         .top-navigation {
-//             transition: height 0.5s ease-in-out;
-//             width: 100%;
-
-//             .aria-label {
-//                 @include flex-box--row();
-//                 padding: 8px 25px;
-
-//                 .logo-mini {
-//                     display: inline-block;
-//                     background-image: url('../../assets/images/logo_ndc.png');
-//                     @include bg-image();
-//                     width: 65px;
-//                     height: 65px;
-//                 }
-
-//                 button {
-//                     display: block;
-//                     height: 40px;
-//                     width: 40px;
-//                     background-color: transparent;
-//                     border: 1px solid #0E6F40;
-
-//                     .svg-inline--fa {
-//                         cursor: pointer;
-//                         color: $color--lighter--green;
-//                         width: 50%;
-//                         height: 50%;
-//                     }
-//                 }
-//             }
-
-//             .aria-visible {
-//                 display: initial;
-//             }
-
-
-//             .top-navigation-container {
-//                 @include flex-box--row();
-//                 position: initial;
-//                 margin: 20px 25px;
-//                 background-color: $color--grey;
-
-//                 .top-navigation--header {
-//                     display: none;
-//                 }
-
-//                 .top-navigation--links {
-//                     border: none;
-//                     height: initial;
-
-//                     ul {
-//                         @include flex-box--column();
-
-//                         li {
-//                             margin: 20px 0;
-//                         }
-//                     }
-//                 }
-
-//                 .social-media-links {
-//                     @include flex-box--column();
-
-//                     a {
-//                         margin: 15px 0;
-
-//                         .svg-inline--fa {
-//                             cursor: pointer;
-//                             width: 25px !important;
-//                             height: 25px !important;
-//                             color: $color--darker--green;
-//                         }
-//                     }
-//                 }
-//             }
-
-//             .aria-hidden {
-//                 display: none;
-//             }
-//         }
-//     }
-
-//     /*
-//         HOME SECTION
-//     */
-//     main {
-//         home-page {
-
-//             //hero
-//             hm-hero {
-//                 .hero-container {
-//                     width: 100%;
-
-
-//                     .hero--content {
-//                         position: initial;
-//                         text-align: center;
-//                         padding: 100px 25px 0 25px;
-
-//                         .hero--content_text {
-//                             margin: 0 auto
-//                         }
-//                     }
-
-
-//                     .hero--overlay--container {
-//                         position: relative;
-//                         top: 150px;
-//                         width: 230px;
-//                         margin: 0 auto;
-//                         left: 0;
-//                     }
-//                 }
-
-
-//             }
-
-//             //mission
-//             hm-mission {
-//                 .mission-container {
-//                     .mission--text {
-//                         padding: 160px 20px;
-
-//                         h1 {
-//                             color: $color--lighter--green;
-//                             font-family: 'Inter-semiBold', sans-serif;
-//                             text-align: center;
-//                         }
-
-//                         p {
-//                             color: $color--lighter--green;
-//                             font-family: 'Inter-extraLight';
-//                             font-weight: 900;
-//                             font-size: 25px;
-//                             text-align: center;
-//                         }
-//                     }
-//                 }
-//             }
-
-//             //primary
-//             hm-primary {
-//                 .primary-bg-container {
-//                     background-color: $color--darker--green;
-//                     height: 2000px;
-
-
-//                     .primary-container {
-
-//                         //top image and text
-//                         .primary-container--top {
-//                             margin: 60px 25px;
-//                             @include flex-box--row();
-//                             flex-wrap: wrap;
-
-//                             .pri-container--top--img_left {
-//                                 width: 100%;
-//                                 height: 500px;
-//                                 margin: 0;
-//                             }
-
-//                             .pri-container--top-text_right {
-//                                 p {
-//                                     width: 100%;
-//                                     text-align: center;
-//                                     margin: 40px 0;
-//                                 }
-//                             }
-//                         }
-
-//                         //bottom image and text
-//                         .primary-container--bottom {
-//                             @include flex-box--row();
-//                             flex-wrap: wrap;
-//                             margin: 60px 25px;
-
-
-//                             .pri-container--bottom--text_left {
-//                                 width: 100%;
-//                                 text-align: center;
-//                                 margin: 60px 0;
-//                             }
-
-//                             .pri-container--bottom--img_right {
-//                                 width: 100%;
-//                                 height: 500px;
-//                                 margin: 0;
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-
-//             //yt
-//             hm-yt {
-//                 .yt-section-container {
-//                     height: 2000px;
-
-//                     //get the full....
-//                     .yt-section--header {
-//                         padding: 100px 25px;
-
-//                         h1 {
-//                             text-align: center;
-//                         }
-//                     }
-
-//                     .yt-grid-container {
-//                         @include flex-box--column();
-//                         margin: 0 25px;
-
-//                         .yt-grid--link {
-//                             padding: 0 20px;
-//                             width: -webkit-fill-available;
-
-//                             .yt-grid--link_holder {
-//                                 margin: 0;
-//                                 margin: 0 auto;
-//                                 width: -webkit-fill-available;
-//                             }
-//                         }
-
-//                         //images
-//                         .yt-grid--images {
-//                             width: 100%;
-//                             height: 650px;
-//                             grid-template-columns: auto auto;
-//                             grid-template-rows: auto;
-
-//                             .yt-grid--img {
-//                                 width: 100%;
-//                             }
-
-//                         }
-//                     }
-//                 }
-//             }
-
-//             //timeline 
-//             hm-timeline {
-//                 .timeline--header {
-//                     padding: 80px 15px !important;
-//                 }
-//             }
-//         }
-
-//     }
-
-//     /*
-//         FOOTER
-//     */
-//     ft-footer {
-//         .ft-social-media-container {
-//             .ft-social-media--header {
-//                 h1 {
-//                     padding: 60px 0;
-//                 }
-//             }
-
-//             //content
-//             .ft-social-media-content-container {
-//                 @include flex-box--column();
-//                 padding: 60px 25px 60px 25px;
-
-//                 //for all social media accounts
-//                 .ft-social-media {
-//                     height: 100px;
-//                     border-radius: 10px;
-//                     margin: 40px 25px;
-//                 }
-
-//                 //twitter
-//                 .ft-social-media--twitter {
-//                     margin: 0;
-//                     @include flex-box--column();
-//                 }
-
-
-//                 //tiktok
-//                 .ft-social-media--tiktok {
-//                     margin: 0;
-//                 }
-//             }
-
-
-//         }
-
-//         .ft-content-container {
-//             padding: 40px 25px;
-//             @include flex-box--column();
-
-//             .ft-logo-container {
-//                 @include flex-box--column();
-
-//             }
-//         }
-//     }
-
-// }
 
 @media screen and (max-width: 768px) {
 
@@ -779,14 +477,14 @@ SMALLER DEVICES
                 .yt-section-container {
                     .yt-grid-container {
                         .yt-grid--link {
-                       
+
                             .yt-grid--link_holder {
                                 margin: 0;
-                            
+
                                 .svg-inline--fa {
                                     cursor: pointer;
                                     width: 20px;
-                                    height: 20px; 
+                                    height: 20px;
                                     padding: 5px;
                                 }
                             }
@@ -974,7 +672,7 @@ SMALLER DEVICES
             //primary
             hm-primary {
                 .primary-bg-container {
-                    height: 2300px;
+                    height: 2000px;
 
                     .primary-container {
                         .primary-bg--header {
@@ -1143,11 +841,11 @@ SMALLER DEVICES
                     .timeline-container {
                         .timeline-bubble-sections {
                             .timeline-bubble--left {
-                                width: 200px;
+                                width: 260px;
                             }
 
                             .timeline-bubble--right {
-                                width: 200px;
+                                width: 260px;
                             }
                         }
                     }
@@ -1177,7 +875,7 @@ SMALLER DEVICES
                             }
 
                             .yt-grid--link_holder {
-                                margin: 0 50px;
+                                margin: 0;
                                 width: 300px;
                                 height: 300px;
 
@@ -1305,7 +1003,6 @@ SMALLER DEVICES
             }
 
             //yt-section
-            // //yt
             hm-yt {
                 .yt-section-container {
                     .yt-grid-container {
@@ -1329,8 +1026,8 @@ SMALLER DEVICES
                             }
 
                             .yt-grid--link_holder {
-                                width: 160px;
-                                height: 160px;
+                                width: 260px;
+                                height: 260px;
 
                                 display: flex;
                                 justify-content: center;
@@ -1345,6 +1042,25 @@ SMALLER DEVICES
                 }
             }
 
+            //timeline
+            hm-timeline {
+                .timeline-section {
+                    height: 1000px;
+                    /* Place the timelime to the left */
+
+                    .timeline-container {
+                        .timeline-bubble-sections {
+                            .timeline-bubble--left {
+                                width: 215px;
+                            }
+
+                            .timeline-bubble--right {
+                                width: 215px;
+                            }
+                        }
+                    }
+                }
+            }
 
         }
     }
