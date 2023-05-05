@@ -6,8 +6,8 @@ Template_4.innerHTML = `
 
     <div class="primary-container">
         <div class="primary-bg--header">WHO WE ARE</div>
-        <p class="pri-bg--text">We are the people God has Chosen</p>
-        <p class="pri-bg--text">We are Ndejje Collective</p>
+        <p class="pri-bg--text">Ndejje collective</p>
+        <p class="pri-bg--text">The people God has chosen</p>
 
         <div class="primary-container--top">
             <div class="pri-container--top--img_left"></div>
