@@ -9,6 +9,12 @@
 */
 import "../styles/main.scss";
 
+/**
+    ANIMATIONS
+*/
+import '../tsc/animations';
+
+
 /*
     TOP NAVIGATION
 */

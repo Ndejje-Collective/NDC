@@ -14,6 +14,9 @@ import './hm-sections/yt';
 //COMMITMENT SECTION
 import './hm-sections/commitment';
 
+//TIMELINE
+import './hm-sections/timeline';
+
 //MESSAGE
 import './hm-sections/message';
 
@@ -25,7 +28,7 @@ HmTemplate.innerHTML = `
 <hm-primary></hm-primary>
 <hm-yt></hm-yt>
 <hm-commitment></hm-commitment>
-<hm-message></hm-message>
+<hm-timeline></hm-timeline>
 `
 
 export class Home extends HTMLElement {

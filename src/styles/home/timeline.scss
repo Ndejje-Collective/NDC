@@ -1,0 +1,152 @@
+@import '../common/mixins.scss';
+@import '../common/visuals.scss';
+
+hm-timeline {
+    .timeline-section {
+        background: #2e2e2e;
+        background-blend-mode: multiply;
+        background-image: url('../../assets/images/img8.jpeg');
+        @include bg-image();
+        height: 1000px;
+
+        .timeline--header {
+            padding: 80px 130px;
+
+            h1 {
+                font-family: 'Inter-semiBold';
+                font-size: 28px;
+                color: $color--white;
+                text-align: center;
+
+                // animation-name: change;
+                // animation-duration: 500ms;
+                // animation-fill-mode: forwards;
+                // animation-iteration-count: infinite;
+    
+                // @keyframes change {
+                //     0% {
+                //         color: inherit;
+                //     }
+                //     50% {
+                //         color: green;
+    
+                //     }
+                //     100% {
+                //         color: red;
+                //     }
+    
+                // }
+            }
+        }
+
+    //the middle line
+    .timeline-container {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 90px 130px;
+        height: 600px;
+    }
+
+    //the middle line
+    .timeline-container::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: $color--white;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        height: 700px;
+    }
+
+    .timeline-container {
+        .timeline-bubble-sections {
+
+            //the bubbles
+            .timeline { 
+                position: relative;
+                width: 50%;
+
+                //the content in the bubbles
+                .timeline-bubble-content {
+                    padding: 20px 30px;
+                    background-color: $color--white;
+                    position: relative;
+                    border-radius: 6px;
+                    border: 1px solid #004021;
+                }
+
+                .timeline-bubble--left_content {
+                    margin-right: 25px;
+                    color: $color--darker--green;
+                }
+            }
+
+            //circles
+            .timeline::after {
+                content: '';
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                right: -18px;
+                background-color: $color--lime--green;
+                border: 4px solid #004021;
+                top: 15px;
+                border-radius: 50%;
+                z-index: 1;
+            }
+
+            .timeline-bubble--left {
+                left: 0;
+            }
+
+            .timeline-bubble--left::before {
+                content: " ";
+                height: 0;
+                position: absolute;
+                top: 22px;
+                width: 0;
+                z-index: 1;
+                right: 30px;
+                border: medium solid #004021;
+                border-width: 10px 0 10px 10px;
+                border-color: transparent transparent transparent #004021;
+            }
+
+            .timeline-bubble--right {
+                left: 50%;
+
+                .timeline-bubble--right_content {
+                    margin-left: 25px;
+                    text-align: right;
+                    color: $color--darker--green;
+                }
+            }
+
+            //right
+            .timeline-bubble--right::before {
+                content: " ";
+                height: 0;
+                position: absolute;
+                top: 22px;
+                width: 0;
+                z-index: 1;
+                left: 30px;
+                border: medium solid #004021;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent #004021 transparent transparent;
+            }
+
+            .timeline-bubble--right::after {
+                left: -16px;
+            }
+        }
+
+
+    }
+    }
+
+
+}

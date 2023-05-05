@@ -48,7 +48,7 @@ hm-primary {
                 @include flex-box--row();
 
                 .pri-container--top--img_left {
-                    background-image: url('../../assets/images/img5.jpeg');
+                    background-image: url('../../assets/images/img3.png');
                     @include bg-image();
                     border-radius: 10px;
                     width: 500px;
@@ -61,6 +61,7 @@ hm-primary {
                         margin-left: 20px;
                         color: $color--white;
                         font-family: 'Inter-extraLight', sans-serif;
+                        font-weight: 500;
                         font-size: 20px;
                         width: 400px;
                         text-align: left;
