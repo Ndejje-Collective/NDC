@@ -778,6 +778,19 @@ SMALLER DEVICES
             hm-yt {
                 .yt-section-container {
                     .yt-grid-container {
+                        .yt-grid--link {
+                       
+                            .yt-grid--link_holder {
+                                margin: 0;
+                            
+                                .svg-inline--fa {
+                                    cursor: pointer;
+                                    width: 20px;
+                                    height: 20px; 
+                                    padding: 5px;
+                                }
+                            }
+                        }
 
                         //images
                         .yt-grid--images {
@@ -1152,7 +1165,7 @@ SMALLER DEVICES
 
                             //join us...
                             .yt-grid--link_header {
-                                margin: 30px 0;
+                                margin: 0;
                                 height: 60px;
 
                                 h2 {
@@ -1254,11 +1267,6 @@ SMALLER DEVICES
     top-navigation {
         .top-navigation {
 
-            .top-navigation-container {
-                background-color: #def0d5;
-            }
-
-
             .aria-visible {
                 display: initial;
             }
@@ -1321,9 +1329,8 @@ SMALLER DEVICES
                             }
 
                             .yt-grid--link_holder {
-                                margin: 0 50px;
-                                width: 300px;
-                                height: 300px;
+                                width: 160px;
+                                height: 160px;
 
                                 display: flex;
                                 justify-content: center;
@@ -1348,6 +1355,9 @@ SMALLER DEVICES
     top-navigation {
         .top-navigation {
 
+            .top-navigation-container {
+                background-color: #def0d5;
+            }
 
             .aria-visible {
                 display: initial;
