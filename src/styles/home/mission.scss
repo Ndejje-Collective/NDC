@@ -1,5 +1,6 @@
 @import '../common/mixins.scss';
 @import '../common/visuals.scss';
+@import '../common/animations.scss';
 
 hm-mission {
     .mission-container {
@@ -15,12 +16,14 @@ hm-mission {
                 font-family: 'Inter-semiBold', sans-serif;
             }
 
+
             p {
                 padding: 70px 0 30px 0;
                 color: $color--lighter--green;
                 font-family: 'Inter-extraLight';
                 font-weight: 900;
                 font-size: 25px;
+                transition-delay: 0.5s;
             }
         }
     }

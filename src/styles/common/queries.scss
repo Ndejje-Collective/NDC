@@ -59,11 +59,13 @@ SMALLER DEVICES
                     border: none;
                     height: initial;
 
-                    ul {
-                        @include flex-box--column();
-
-                        li {
-                            margin: 20px 0;
+                    nav {
+                        ul {
+                            @include flex-box--column();
+    
+                            li {
+                                margin: 20px 0;
+                            }
                         }
                     }
                 }
@@ -188,9 +190,11 @@ SMALLER DEVICES
 
 
                             .pri-container--bottom--text_left {
-                                width: 100%;
-                                text-align: center;
-                                margin: 60px 0;
+                                p {
+                                    width: 100%;
+                                    text-align: center;
+                                    margin: 60px 0;
+                                }
                             }
 
                             .pri-container--bottom--img_right {
@@ -298,12 +302,11 @@ SMALLER DEVICES
         }
 
         .ft-content-container {
-            padding: 40px 25px;
+            padding: 6px 25px;
             @include flex-box--column();
 
             .ft-logo-container {
                 @include flex-box--column();
-
             }
         }
     }
@@ -589,6 +592,10 @@ SMALLER DEVICES
 @media screen and (max-width: 580px) {
     top-navigation {
         .top-navigation {
+            .aria-label {
+                padding: 1px 25px;
+            }
+
             .aria-visible {
                 display: initial;
             }
@@ -961,6 +968,38 @@ SMALLER DEVICES
 
 @media screen and (max-width: 375px) {
 
+    .animate-from-left {
+        transform: translateX(-50px);
+        transition: all 0.4s ease-out;
+        transition-delay: 0.1s;
+        opacity: 0;
+    }
+    
+    
+    
+    .animate-from-right {
+        transform: translateX(10px);
+        transition: all 0.4s ease-out;
+        transition-delay: 0.1s;
+        opacity: 0;
+    }
+    
+    .animate-from-top {
+        transform: translateY(-50px);
+        transition: all 0.4s ease-out;
+        transition-delay: 0.1s;
+        opacity: 0;
+    }
+    
+    
+    
+    .animate {
+        opacity: 1;
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+    
+
     //top navigation
     top-navigation {
         .top-navigation {
@@ -1063,6 +1102,28 @@ SMALLER DEVICES
             }
 
         }
+
+        /*
+            BLOG PAGE
+        */
+        blog-page {
+            .blog-container {
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        /*
+            ABOUT PAGE
+        */
+        about-page {
+            .about-container {
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
     }
 }
 
@@ -1071,10 +1132,6 @@ SMALLER DEVICES
     top-navigation {
         .top-navigation {
 
-            .top-navigation-container {
-                background-color: #def0d5;
-            }
-
             .aria-visible {
                 display: initial;
             }
@@ -1082,7 +1139,7 @@ SMALLER DEVICES
 
             .top-navigation-container {
                 padding: 0 15px;
-                background-color: #def0d5;
+                background-color: #fff;
 
                 .social-media-links {
                     @include flex-box--row();

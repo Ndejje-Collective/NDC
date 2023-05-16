@@ -1,5 +1,6 @@
 @import '../common/visuals.scss';
 @import '../common/mixins.scss';
+@import '../common/animations.scss';
 
 hm-hero {
     .hero-container {
@@ -30,6 +31,7 @@ hm-hero {
                     color: $color--darker--green;
                     font-size: 28px;
                     line-height: 38px;
+                    transition-delay: 0.5s;
                 }
             }
 
@@ -42,6 +44,7 @@ hm-hero {
                 margin-top: 90px;
                 width: 170px;
                 height: 50px;
+                //transition-delay: 0.5s;
             }
         }
 

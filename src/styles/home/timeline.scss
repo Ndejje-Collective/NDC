@@ -1,5 +1,6 @@
 @import '../common/mixins.scss';
 @import '../common/visuals.scss';
+@import '../common/animations.scss';
 
 hm-timeline {
     .timeline-section {
@@ -58,7 +59,6 @@ hm-timeline {
         bottom: 0;
         left: 50%;
         right: 50%;
-        height: 700px;
     }
 
     .timeline-container {

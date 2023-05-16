@@ -5,6 +5,10 @@ import { faTiktok } from '@fortawesome/free-brands-svg-icons';
 library.add(faInstagram, faTwitter, faTiktok);
 dom.watch();
 
+
+//for the observer Api
+import { observer } from "./observerApi";
+
 let TemplateFooter = document.createElement('template');
 TemplateFooter.innerHTML = `
 <footer>
@@ -12,7 +16,7 @@ TemplateFooter.innerHTML = `
     <div class="ft-social-media--header"><h1>CHECK OUT OUR OTHER PLATFORMS</h1></div>
     <div class="ft-social-media-content-container">
         <!--twitter-->
-        <div class="ft-social-media ft-social-media--twitter">
+        <div class="ft-social-media ft-social-media--twitter animate-from-top">
             <div class="ft-social-media--twitter--container">
                 <div class="ft-social-media--twitter_txt"><i class="fa-brands fa-twitter"></i>
                     <p>Twitter</p>
@@ -22,7 +26,7 @@ TemplateFooter.innerHTML = `
         </div>
 
         <!--ig-->
-        <div class="ft-social-media ft-social-media--instagram">
+        <div class="ft-social-media ft-social-media--instagram animate-from-top">
             <div class="ft-social-media--instagram--container">
                 <div class="ft-social-media--ig_txt"><i class="fa-brands fa-instagram"></i>
                     <p>Instagram</p>
@@ -32,7 +36,7 @@ TemplateFooter.innerHTML = `
         </div>
 
         <!--tiktok-->
-        <div class="ft-social-media ft-social-media--tiktok">
+        <div class="ft-social-media ft-social-media--tiktok animate-from-top">
             <div class="ft-social-media--tiktok--container">
                 <div class="ft-social-media--tiktok_txt"><i class="fa-brands fa-tiktok"></i>
                     <p>Tiktok</p>
@@ -65,7 +69,21 @@ export class Footer extends HTMLElement {
 
     connectedCallback() {
         this.appendChild(TemplateFooter.content.cloneNode(true));
+
+        this.observeApiChanges();
     }
+
+    observeApiChanges() {
+        const animation_elements = document.querySelectorAll(
+          ".animate-from-left, .animate-from-right, .animate-from-top, .animate"
+        );
+    
+        //to make sure the observer is observing the elements
+        for (let i = 0; i < animation_elements.length; i++) {
+          const el = animation_elements[i];
+          observer.observe(el);
+        }
+      }
 }
 
-customElements.define('ft-footer', Footer);
+customElements.define('ft-footer', Footer)

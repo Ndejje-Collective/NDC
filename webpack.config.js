@@ -4,9 +4,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
+const page = ['index', 'about', 'blog'];
+
 module.exports = {
     mode: 'production',
-    entry: './src/tscBase/index.ts',
+    entry: page.reduce((config, page) => {
+        config[page] = `./src/tscBase/${page}.ts`;
+        return config;
+    }, {}),
 
     module: {
         rules: [
@@ -25,7 +30,7 @@ module.exports = {
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
-                        options: { publicPath: "" }
+                        //options: { publicPath: "" }
                     },
                     {
                         loader: 'css-loader',
@@ -79,20 +84,40 @@ module.exports = {
 
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js',
+        filename: "[name].js",
         assetModuleFilename: "assets/[hash][ext][query]" //output folder for images in dist
     },
 
-    plugins: [
+    // optimization: {
+    //     splitChunks: {
+    //         chunks: "all",
+    //     },
+    // },
+
+    plugins: [].concat(
+        page.map(
+            (page) =>
+                new HtmlWebpackPlugin({
+                    inject: true,
+                    template: `./src/${page}.html`,
+                    filename: `${page}.html`,
+                    chunks: [page],
+                })
+        ),
+
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
         new FaviconsWebpackPlugin({
             logo: './src/assets/favicon/favicon-32x32.png',
         }),
-        new HtmlWebpackPlugin({
-            template: "./src/index.html"
-        }),
-    ],
+    ),
+
+    optimization: {
+        splitChunks: {
+            chunks: "all",
+        },
+    },
+
 
     devtool: 'source-map',
 
@@ -107,6 +132,7 @@ module.exports = {
         compress: true,
         port: 8000,
         open: true,
+        historyApiFallback: true,
     }
 
 }

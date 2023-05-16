@@ -1,5 +1,6 @@
 @import '../common/mixins.scss';
 @import '../common/visuals.scss';
+@import '../common/animations.scss';
 
 hm-primary {
     .primary-bg-container {
@@ -14,6 +15,7 @@ hm-primary {
 
 
         .primary-container {
+
             //header
             .primary-bg--header {
                 @include flex-box--column();
@@ -32,7 +34,6 @@ hm-primary {
                 justify-content: flex-end;
                 margin: 0 130px;
                 font-family: 'Inter-Medium', sans-serif;
-
             }
 
             //green bg
@@ -58,24 +59,26 @@ hm-primary {
 
                 .pri-container--top-text_right {
                     p {
+                        width: 400px;
                         margin-left: 20px;
                         color: $color--white;
                         font-family: 'Inter-extraLight', sans-serif;
                         font-weight: 500;
                         font-size: 20px;
-                        width: 400px;
                         text-align: left;
                     }
                 }
             }
+        }
 
-            //bottom image and text
-            .primary-container--bottom {
-                margin: 0 130px;
-                @include flex-box--row();
+        //bottom image and text
+        .primary-container--bottom {
+            margin: 0 130px;
+            @include flex-box--row();
 
 
-                .pri-container--bottom--text_left {
+            .pri-container--bottom--text_left {
+                p {
                     margin-right: 20px;
                     color: $color--white;
                     font-family: 'Inter-extraLight', sans-serif;
@@ -83,15 +86,15 @@ hm-primary {
                     width: 400px;
                     text-align: right;
                 }
+            }
 
-                .pri-container--bottom--img_right {
-                    background-image: url('../../assets/images/img14.jpg');
-                    @include bg-image();
-                    border-radius: 10px;
-                    width: 500px;
-                    height: 400px;
-                    margin-left: 20px;
-                }
+            .pri-container--bottom--img_right {
+                background-image: url('../../assets/images/img14.jpg');
+                @include bg-image();
+                border-radius: 10px;
+                width: 500px;
+                height: 400px;
+                margin-left: 20px;
             }
         }
     }

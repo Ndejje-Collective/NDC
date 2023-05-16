@@ -24,12 +24,13 @@ Template_1.innerHTML = `
         <div class="top-navigation--header"><div class="logo"></div>NDC</div>
 
         <div class="top-navigation--links">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Blog</li>
-            </ul>
-    
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html" title="about">About</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                </ul>
+            </nav>
         </div>
     
         <!---the social media links-->

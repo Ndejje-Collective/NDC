@@ -1,7 +1,16 @@
+import { library, dom } from "@fortawesome/fontawesome-svg-core";
+import { faGears } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faGears);
+dom.watch();
+
 let BgTemplate = document.createElement('template');
 BgTemplate.innerHTML = `
-<h1>BLOG PAGE</h1>
-`
+<div class="blog-container">
+    <i class="fa-solid fa-gears"></i>
+    <h2>PAGE IS UNDER DEVELOPMENT</h2>
+</div>
+`;
 
 export class Blog extends HTMLElement {
     constructor() {
@@ -10,7 +19,6 @@ export class Blog extends HTMLElement {
 
     connectedCallback() {
         this.appendChild(BgTemplate.content.cloneNode(true));
-
     }
 }
 
