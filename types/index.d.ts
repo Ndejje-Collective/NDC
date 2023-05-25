@@ -1,0 +1,9 @@
+/*
+    THIS IS TO ENSURE IMPORTATION OF IMAGE FILES DIRECTLY INTO TYPESCRIPT
+    WITHOUT IT, A MODULE ERROR OCURRS DURING IMPORTATION OF THE IMAGE FILES
+
+*/
+
+declare module "*.jpg";
+declare module "*.png";
+declare module "*.jpeg";

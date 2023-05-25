@@ -1,0 +1,90 @@
+@import '../common/mixins.scss';
+@import '../common/visuals.scss';
+
+
+ab-envision {
+    .envision-container {
+        padding: 100px 120px 200px 120px;
+
+        .envision--story-container {
+            @include flex-box--row();
+            align-items: flex-start;
+
+            .envision--story_img  {
+                width: 50%;
+                height: 500px;
+                border: 1px solid #004021;
+
+                background-image: url('../../assets/images/img8.jpeg');
+                background-position: center right;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-attachment: fixed;
+            }
+
+            .envision--story_text {
+                width: 50%;
+                border: 1px solid #004021;
+                height: 500px;
+
+                h1 {
+                    padding: 30px 20px;
+                    color: $color--darker--green;
+                    font-family: 'Inter-semiBold';
+                    font-size: 40px;
+                }
+
+
+                p {
+                    padding: 20px;
+                    font-family: 'Inter-Medium';
+                    color: $color--darker--green;
+                    font-size: 20px;
+                }  
+            }
+        }
+
+        
+        .envision--mission-container {
+            @include flex-box--row();
+            align-items: flex-start;
+
+            .envision--mission_text {
+                width: 50%;
+                border: 1px solid #004021;
+                height: 500px;
+
+                h1 {
+                    padding: 30px 20px;
+                    color: $color--darker--green;
+                    font-family: 'Inter-semiBold';
+                    font-size: 40px;
+                    text-align: right;
+                }
+
+
+                p {
+                    padding: 20px;
+                    font-family: 'Inter-Medium';
+                    color: $color--darker--green;
+                    font-size: 20px;
+                    text-align: right;
+                }   
+            }
+
+            .envision--mission_img {
+                width: 50%;
+                height: 500px;
+                border: 1px solid #004021;
+
+                background-image: url('../../assets/images/img19.jpg');
+                background-position: center left;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-attachment: fixed;
+
+            }
+        }
+
+    }
+}

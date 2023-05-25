@@ -1,5 +1,5 @@
-let Template_8 = document.createElement('template');
-Template_8.innerHTML = `
+let abTemplate_5 = document.createElement('template');
+abTemplate_5.innerHTML = `
 <div class="info-msg-container">
     <h1>A WORD FROM THE PRESIDENT</h1>
     <div class="info-msg-content-container">
@@ -18,8 +18,8 @@ export class Message extends HTMLElement {
     }
 
     connectedCallback() {
-        this.appendChild(Template_8.content.cloneNode(true));
+        this.appendChild(abTemplate_5.content.cloneNode(true));
     }
 }
 
-customElements.define('hm-message', Message);
+customElements.define('ab-message', Message);

@@ -9,10 +9,28 @@ body {
     padding: 0;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 //Top navigation
@@ -28,7 +46,6 @@ body {
 //mission section
 @import './home/mission.scss';
 
-
 //primary section
 @import './home/primary.scss';
 
@@ -40,10 +57,6 @@ body {
 
 //timeline section
 @import './home/timeline.scss';
-
-//MESSAGE
-@import './home/message.scss';
-
 
 //Footer
 @import './common/footer.scss';

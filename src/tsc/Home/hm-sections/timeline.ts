@@ -13,14 +13,14 @@ Template_7.innerHTML = `
         <div class="timeline-bubble-sections">
             <div class="timeline timeline-bubble--left">
                 <div class="timeline-bubble-content timeline-bubble--left_content animate-from-top">
-                    <h2>12th/09/23</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                    <h2>12th/01/23</h2>
+                    <p>We promised you last year to do an all music worship experience and <a href="https://youtu.be/ZydcSM9NJ-Y">here</a> it is. Be blessed as you watch and take part. We brought as many generations of Ndejjeans as we could for this one. Like, comment and share.</p>
                 </div>
             </div>
             <div class="timeline timeline-bubble--right">
                 <div class="timeline-bubble-content timeline-bubble--right_content animate-from-top">
-                    <h2>30th/12/23</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                    <h2>20th/1/23</h2>
+                    <p>Once again we bring to you the Ndejje Collective online fellowship happening right <a href="https://youtu.be/1akx62BbSLY">here</a> on our YouTube channel on Tuesday 17th January at 5pm. You do not want to miss out because we have a lot packed and prepared for you.</p>
                 </div>
             </div>
         </div>

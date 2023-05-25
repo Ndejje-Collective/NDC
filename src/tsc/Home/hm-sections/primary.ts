@@ -1,9 +1,6 @@
 //for the observer api
 import { observer } from "../../observerApi";
 
-//animations
-import anime from "animejs/lib/anime.es";
-
 let Template_4 = document.createElement("template");
 Template_4.innerHTML = `
 <div class="primary-bg-container">
@@ -11,7 +8,7 @@ Template_4.innerHTML = `
     <div class="pri-bg"><div>
 
     <div class="primary-container">
-        <div class="primary-bg--header">WHO WE ARE</div>
+        <div class="primary-bg--header" id="pri-bg--header">WHO WE ARE</div>
         <p class="pri-bg--text animate-from-top">Ndejje collective</p>
         <p class="pri-bg--text animate-from-top">The people God has chosen</p>
 
@@ -23,7 +20,7 @@ Template_4.innerHTML = `
         </div>
         <div class="primary-container--bottom">
             <div class="pri-container--bottom--text_left">
-                <p class="animate-from-left">Our desire is to continue our fellowship together virtually and physically led us to start this organization which is primarily music-based. As a community of believers, we are commited to using our gifts to serve God and others. We provide opportuunities for growth, fellowship and service, and seek to inspire others to use their talents to make a difference in the world.</p>
+                <p class="animate-from-left">Our desire to continue our fellowship together virtually and physically led us to start this organization which is primarily music-based. As a community of believers, we are commited to using our gifts to serve God and others. We provide opportuunities for growth, fellowship and service, and seek to inspire others to use their talents to make a difference in the world.</p>
             </div>
             <div class="pri-container--bottom--img_right"></div>
         </div>
@@ -41,7 +38,6 @@ export class Primary extends HTMLElement {
 
     this.observeApiChanges();
 
-    this.animationJs();
   }
 
   observeApiChanges() {
@@ -54,31 +50,6 @@ export class Primary extends HTMLElement {
       const el = animation_elements[i];
       observer.observe(el);
     }
-  }
-
-  animationJs() {
-    var textWrapper: any = document.querySelector(".p1 .letters");
-    textWrapper.innerHTML = textWrapper.textContent.replace(
-      /\S/g,
-      "<span class='letter'>$&</span>"
-    );
-
-    anime
-      .timeline({ loop: false })
-      .add({
-        targets: ".p1 .letter",
-        translateY: ["1.1em", 0],
-        translateZ: 0,
-        duration: 250,
-        delay: (el, i) => 50 * i,
-      })
-      .add({
-        targets: ".p1",
-        opacity: 1,
-        duration: 1000,
-        easing: "easeOutExpo",
-        delay: 1000,
-      });
   }
 }
 

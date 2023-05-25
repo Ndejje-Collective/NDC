@@ -19,7 +19,7 @@ Template_2.innerHTML = `
             <br>
             <h2 class="animate-from-left">COMING TOGETHER FOR <br> THE CAUSE OF <br> FELLOWSHIP</h2>
         </div>
-        <button class="hero--content_btn">JOIN NOW</button>
+        <a href="#pri-bg--header"><button class="hero--content_btn">LEARN MORE</button></a>
     </div>
 
     <div class="hero--overlay--container">
@@ -82,3 +82,20 @@ export class Hero extends HTMLElement {
 }
 
 customElements.define("hm-hero", Hero);
+
+
+class PriBgNav extends HTMLButtonElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    let pribgheader = document.getElementById('pri-bg--header');
+
+    this.addEventListener('click', () => {
+
+    })
+  }
+}
+
+customElements.define('pri-nav', PriBgNav)

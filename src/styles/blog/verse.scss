@@ -1,0 +1,22 @@
+@import '../common/mixins.scss';
+@import '../common/visuals.scss';
+
+
+bg-verse {
+    .verse-text-container {
+        padding: 50px 140px;
+    
+        h1 {
+            font-family: 'Inter-semiBold';
+            margin-bottom: 30px;
+            color: $color--darker--green;
+        }
+    
+        p {
+            font-family: 'Inter-Medium';
+            font-size: 25px;
+            color: $color--darker--green;
+    
+        }
+    }
+}

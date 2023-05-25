@@ -16,8 +16,6 @@ import './hm-sections/commitment';
 //TIMELINE
 import './hm-sections/timeline';
 
-//MESSAGE
-import './hm-sections/message';
 
 
 let HmTemplate = document.createElement('template');

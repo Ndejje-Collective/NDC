@@ -62,7 +62,7 @@ SMALLER DEVICES
                     nav {
                         ul {
                             @include flex-box--column();
-    
+
                             li {
                                 margin: 20px 0;
                             }
@@ -260,6 +260,33 @@ SMALLER DEVICES
             }
         }
 
+        //about page
+        about-page {
+            ab-hero {
+                .about-hero-container {
+                    .ab-hero_text {
+                        h1 {
+                            padding-top: 20%;
+                        }
+                    }
+                }
+            }
+        }
+
+        //blog-page
+        blog-page {
+
+            bg-article1 {
+                .article1-dialog-container {
+                    article {
+                        margin: 150px 25px 0 25px;
+                        padding-bottom: 30px;
+                        height: 550px;
+                    }
+                }
+            }
+        }
+
     }
 
     /*
@@ -312,6 +339,106 @@ SMALLER DEVICES
     }
 }
 
+@media screen and (max-width: 1170px) {
+    
+    //about page
+    about-page {
+
+        //envision section
+        ab-envision {
+            .envision-container {
+                padding: 100px 40px 200px 40px;
+
+                .envision--story-container {
+                    @include flex-box--column();
+
+                    .envision--story_img {
+                        width: 100%;
+                        height: 450px;
+                    }
+
+                    .envision--story_text {
+                        width: 100%;
+                    }
+                }
+
+                .envision--mission-container {
+                    @include flex-box--column();
+                    flex-direction: column-reverse;
+
+                    .envision--mission_text {
+                        width: 100%;
+                    }
+
+
+                    .envision--mission_img {
+                        width: 100%;
+                        height: 450px;
+                    }
+
+                }
+            }
+        }
+
+        //gallery section
+        ab-gallery {
+            button {
+                display: none;
+            }
+
+            .slider {
+                @include flex-box--column();
+
+                #slider--text-container {
+                    text-align: center;
+                    width: 300px !important;
+                    padding: 10px 20px;
+                }
+
+                .slide-container {
+                    display: none;
+                }
+
+                .mini-slide-container {
+                    display: block;
+                    @include flex-box--column();
+                    width: 100%;
+                }
+            }
+        }
+
+        //message
+        ab-message {
+            .info-msg-container {
+
+                .info-msg-content-container {
+                    @include flex-box--column();
+
+                    .info-msg-content_text {
+                        width: 100%;
+                        margin: 0;
+
+                        h2 {
+                            text-align: center;
+                        }
+
+                        p {
+                            text-align: center;
+                        }
+                    }
+
+                    .info-msg-content_picture {
+                        margin-top: 50px;
+                        height: 500px;
+                        width: 100%;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 768px) {
 
@@ -585,6 +712,70 @@ SMALLER DEVICES
             }
 
         }
+
+        //about page
+        about-page {
+            ab-hero {
+                .about-hero-container {
+                    .ab-hero_text {
+                        h1 {
+                            padding-top: 30%;
+                        }
+                    }
+                }
+            }
+
+            ab-video {
+                .intro-video-container {
+                    padding: 30px 25px 150px 25px;
+
+
+                    .intro--video {
+                        iframe {
+                            border: 1px solid #004021;
+                            width: 100%;
+                            height: 350px;
+                        }
+
+                    }
+                }
+            }
+
+            //message
+            ab-message {
+                .info-msg-container {
+                    padding: 80px 30px;
+
+                    .info-msg-content-container {
+
+                        .info-msg-content_picture {
+                            margin-top: 50px;
+                            height: 500px;
+                            width: 100%;
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+        //blog page
+        blog-page {
+
+            //verse section
+            bg-verse {
+                .verse-text-container {
+                    padding: 50px 40px;
+                }
+            }
+
+            bg-article1 {
+                .article1-section-container {
+                    padding: 50px 40px;
+                }
+            }
+        }
     }
 }
 
@@ -756,6 +947,76 @@ SMALLER DEVICES
 
 
         }
+
+        //about page
+        about-page {
+
+            //about hero
+            ab-hero {
+                .about-hero-container {
+                    .ab-hero_text {
+                        h1 {
+                            padding-top: 45%;
+                        }
+                    }
+                }
+            }
+
+            //envision section
+            ab-envision {
+                .envision-container {
+                    padding: 100px 25px 200px 25px;
+
+                    .envision--story-container {
+                        @include flex-box--column();
+
+                        .envision--story_img {
+                            height: 500px;
+                        }
+
+                        .envision--story_text {
+                            width: 100%;
+                            height: 600px;
+                        }
+                    }
+
+                    .envision--mission-container {
+                        @include flex-box--column();
+                        flex-direction: column-reverse;
+
+                        .envision--mission_text {
+                            width: 100%;
+                        }
+
+
+                        .envision--mission_img {
+                            width: 100%;
+                            height: 500px;
+                        }
+
+                    }
+                }
+            }
+
+            ab-gallery {
+
+                .slider {
+                    @include flex-box--column();
+
+
+                    .mini-slide-container {
+                        display: block;
+                        @include flex-box--column();
+                        width: 100%;
+
+                        img {
+                            width: 350px;
+                            height: 250px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     /*
@@ -901,6 +1162,100 @@ SMALLER DEVICES
 
         }
 
+        //about page 
+        about-page {
+
+            //about hero section
+            ab-hero {
+                .about-hero-container {
+                    .ab-hero_text {
+                        h1 {
+                            padding: 55% 25px 0 25px;
+                        }
+                    }
+                }
+            }
+
+            //envision section
+            ab-envision {
+                .envision-container {
+                    .envision--story-container {
+                        .envision--story_img {
+                            height: 300px;
+                        }
+                    }
+
+                    .envision--mission-container {
+                        .envision--mission_img {
+                            height: 300px;
+                        }
+
+                    }
+                }
+            }
+
+            //gallery
+            ab-gallery {
+                .slider {
+                    @include flex-box--column();
+
+                    .mini-slide-container {
+
+                        img {
+                            width: 300px;
+                            height: 200px;
+                        }
+                    }
+                }
+
+
+            }
+
+            //message
+            ab-message {
+                .info-msg-container {
+                    padding: 80px 25px;
+
+                }
+            }
+
+            //message
+            ab-message {
+                .info-msg-container {
+                    .info-msg-content-container {
+                        .info-msg-content_picture {
+                            margin-top: 50px;
+                            height: 400px;
+                            width: 100%;
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+        //blog page
+        blog-page {
+
+            //verse section
+            bg-verse {
+                .verse-text-container {
+                    padding: 50px 25px;
+                }
+            }
+
+            bg-article1 {
+                .article1-section-container {
+                    padding: 50px 25px;
+
+                    article {
+                        height: 250px;
+                    }
+                }
+            }
+        }
+
 
     }
 
@@ -974,31 +1329,31 @@ SMALLER DEVICES
         transition-delay: 0.1s;
         opacity: 0;
     }
-    
-    
-    
+
+
+
     .animate-from-right {
         transform: translateX(10px);
         transition: all 0.4s ease-out;
         transition-delay: 0.1s;
         opacity: 0;
     }
-    
+
     .animate-from-top {
         transform: translateY(-50px);
         transition: all 0.4s ease-out;
         transition-delay: 0.1s;
         opacity: 0;
     }
-    
-    
-    
+
+
+
     .animate {
         opacity: 1;
         transform: translateX(0);
         transform: translateY(0);
     }
-    
+
 
     //top navigation
     top-navigation {
@@ -1103,26 +1458,75 @@ SMALLER DEVICES
 
         }
 
+
+
         /*
             BLOG PAGE
         */
-        blog-page {
-            .blog-container {
-                h2 {
-                    font-size: 30px;
-                }
-            }
-        }
+
+
 
         /*
             ABOUT PAGE
         */
         about-page {
-            .about-container {
-                h2 {
-                    font-size: 30px;
+
+            //envision section
+            ab-envision {
+                .envision-container {
+                    .envision--story-container {
+                        .envision--story_img {
+                            height: 300px;
+                        }
+
+                        .envision--story_text {
+                            height: 750px;
+                        }
+                    }
+
+                    .envision--mission-container {
+                        .envision--mission_img {
+                            height: 300px;
+                        }
+
+                    }
+
+                    .envision--mission-container {
+                        .envision--mission_text {
+                            height: 600px;
+                        }
+                    }
                 }
             }
+
+            ab-gallery {
+                .slider {
+                    @include flex-box--column();
+
+                    .mini-slide-container {
+
+                        img {
+                            width: 250px;
+                            height: 180px;
+                        }
+                    }
+                }
+            }
+
+            ab-video {
+                .intro-video-container {
+
+                    .intro--video {
+                        iframe {
+                            border: 1px solid #004021;
+                            width: 100%;
+                            height: 300px;
+                        }
+
+                    }
+                }
+            }
+
         }
     }
 }

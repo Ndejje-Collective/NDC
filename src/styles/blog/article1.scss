@@ -1,0 +1,101 @@
+@import '../common/mixins.scss';
+@import '../common/visuals.scss';
+
+
+
+
+bg-article1 {
+    .article1-section-container {
+        padding: 80px 120px;
+
+        .article1--text {
+            padding: 0 20px;
+            margin: 30px 0;
+            text-align: left;
+
+            h1 {
+                margin-top: 30px;
+                font-family: 'Inter-semiBold';
+                color: $color--darker--green;
+            }
+
+            h4 {
+                margin: 10px 0 30px 0;
+                color: $color--darker--green;
+                font-family: 'Inter-extraLight';
+            }
+
+            p {
+                font-size: 19px;
+                font-family: 'Inter-Medium';
+                color: $color--darker--green;
+            }
+        }
+
+        button {
+            margin: 30px 20px 20px 20px;
+            width: 100px;
+            height: 40px;
+            cursor: pointer;
+        }
+    }
+
+    .add-dark-bg {
+        background: #000000a1;
+        background-blend-mode: multiply;
+        filter: blur(1px);
+    }
+
+
+    .article1-dialog-container {
+        display: none;
+
+        article {
+            border-radius: 10px;
+            box-shadow: 1px 1px 8px #000;
+            background-color: #fff;
+            border: 1px solid #004021;
+            margin: 100px 120px 0 120px;
+            position: fixed;
+            z-index: 3;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 430px;
+            overflow-y: scroll;
+
+
+            button {
+                border: none;
+                background: none;
+                float: right;
+
+                .svg-inline--fa {
+                    cursor: pointer;
+                    padding: 20px;
+                    width: 25px;
+                    height: 25px;
+                    color: $color--darker--green;
+                }
+            }
+
+            h1 {
+                padding: 30px;
+                color: $color--darker--green;
+                font-family: 'Inter-semiBold';
+
+            }
+
+            p {
+                padding: 30px;
+                color: $color--darker--green;
+                font-family: 'Inter-Medium';
+                font-size: 17px;
+            }
+
+
+        }
+
+
+    }
+}

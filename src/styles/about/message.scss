@@ -1,10 +1,10 @@
 @import '../common/mixins.scss';
 @import '../common/visuals.scss';
 
-hm-message {
+ab-message {
     .info-msg-container {
         padding: 80px 130px;
-        background-color: $color--white;
+        background-color: $color--grey;
 
         h1 {
             margin-bottom: 80px;

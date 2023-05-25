@@ -1,18 +1,29 @@
-import { library, dom } from "@fortawesome/fontawesome-svg-core";
-import { faGears } from '@fortawesome/free-solid-svg-icons';
+//about hero
+import './ab-sections/abHero';
 
-library.add(faGears);
-dom.watch();
+//envision
+import './ab-sections/envision';
+
+//gallery 
+import './ab-sections/gallery';
+
+//intro video
+import './ab-sections/introvideo';
+
+//message
+import './ab-sections/message';
+
 
 let AbTemplate = document.createElement('template');
 AbTemplate.innerHTML = `
-<div class="about-container">
-    <i class="fa-solid fa-gears"></i>
-    <h2>PAGE IS UNDER DEVELOPMENT</h2>
-</div>
+<ab-hero></ab-hero>
+<ab-envision></ab-envision>
+<ab-gallery></ab-gallery>
+<ab-video></ab-video>
+<ab-message></ab-message>
 `
 
-export class Home extends HTMLElement {
+export class About extends HTMLElement {
     constructor() {
         super();
     }
@@ -22,4 +33,4 @@ export class Home extends HTMLElement {
     }
 }
 
-customElements.define('about-page', Home);
+customElements.define('about-page', About);

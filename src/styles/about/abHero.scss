@@ -1,0 +1,24 @@
+@import '../common/mixins.scss';
+@import '../common/visuals.scss';
+
+ab-hero {
+    .about-hero-container {
+        background: #5e5d5d;
+        background-blend-mode: multiply;
+        background-image: url('../../assets/images/img27.jpg');
+        @include bg-image();
+
+        width: 100%;
+        height: 600px;
+
+        .ab-hero_text {
+            h1 {    
+                padding-top: 15%;
+                color: #fff;
+                text-align: center;
+                font-family: 'Inter-semiBold';
+                font-size: 70px;
+            }
+        }
+    }
+}

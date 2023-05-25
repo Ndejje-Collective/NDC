@@ -2,6 +2,10 @@
 @import '../common/mixins.scss';
 @import '../common/animations.scss';
 
+html {
+    scroll-behavior: smooth;
+}
+
 hm-hero {
     .hero-container {
         background-image: url('../../assets/images/hero.png');
@@ -35,16 +39,21 @@ hm-hero {
                 }
             }
 
-            button {
-                cursor: pointer;
-                border: 1px solid;
-                border-color: $color--darker--green;
-                background-color: $color--darker--green;
-                color: $color--lime--green;
-                margin-top: 90px;
-                width: 170px;
-                height: 50px;
-                //transition-delay: 0.5s;
+
+            a {
+                text-decoration: none;
+
+                button {
+                    cursor: pointer;
+                    border: 1px solid;
+                    border-color: $color--darker--green;
+                    background-color: $color--darker--green;
+                    margin-top: 90px;
+                    width: 170px;
+                    height: 50px;
+                    color: $color--lime--green;
+                    //transition-delay: 0.5s;
+                }
             }
         }
 

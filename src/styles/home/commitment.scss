@@ -16,7 +16,11 @@ hm-commitment {
 
             em {
                 cursor: pointer;
-                color: $color--lime--green;
+
+                a {
+                    text-decoration: none;
+                    color: $color--lime--green;
+                }
             }
         }
     }

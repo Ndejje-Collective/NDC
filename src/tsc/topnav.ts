@@ -1,18 +1,17 @@
 import { library, dom } from "@fortawesome/fontawesome-svg-core";
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 library.add(faFacebookF, faInstagram, faTwitter, faBars);
 dom.watch();
 
-import './navigation';
-
+import "./navigation";
 
 /*
     TOP NAVIGATION SECTION
 */
-let Template_1 = document.createElement('template');
+let Template_1 = document.createElement("template");
 Template_1.innerHTML = `
 <div class="top-navigation">
     <div class="aria-label">
@@ -41,43 +40,57 @@ Template_1.innerHTML = `
         </div>
     </div>
 </div>
-`
+`;
 
 export class TopNavigation extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    connectedCallback() {
-        this.appendChild(Template_1.content.cloneNode(true));
-    }
+  connectedCallback() {
+    this.appendChild(Template_1.content.cloneNode(true));
+    this.hideOnScroll();
+  }
+
+  hideOnScroll() {
+    let navElem: any = document.querySelector('.top-navigation');
+    let scrollPosition = window.pageYOffset;
+
+    window.onscroll = function () {
+      var currentScrollPosition = window.pageYOffset;
+      if (scrollPosition > currentScrollPosition) {
+        navElem.style.top = "0";
+      } else {
+        navElem.style.top = "-50px";
+      }
+      scrollPosition = currentScrollPosition;
+    };
+  }
 }
 
 customElements.define("top-navigation", TopNavigation);
 
-
 //button for minimizing navigation bar for smaller devices
 export class MiniButton extends HTMLButtonElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    connectedCallback() {
-        let miniBtn = document.getElementById('nav-mini-btn');
-        let topNavContainer = document.getElementById('top-nav-visibility')
-        // topNavContainer.classList.add('aria-hidden');
+  connectedCallback() {
+    let miniBtn = document.getElementById("nav-mini-btn");
+    let topNavContainer = document.getElementById("top-nav-visibility");
+    // topNavContainer.classList.add('aria-hidden');
 
-        miniBtn?.addEventListener('click', () => {
-            if(topNavContainer?.classList.contains('aria-hidden')) {
-                topNavContainer.classList.remove('aria-hidden');
-                topNavContainer.classList.add('aria-visible');
-            }
-            else if(topNavContainer?.classList.contains('aria-visible')) {
-                topNavContainer.classList.remove('aria-visible');
-                topNavContainer.classList.add('aria-hidden');
-            }
-        })
-    }
+    miniBtn?.addEventListener("click", () => {
+      if (topNavContainer?.classList.contains("aria-hidden")) {
+        topNavContainer.classList.remove("aria-hidden");
+        topNavContainer.classList.add("aria-visible");
+      } else if (topNavContainer?.classList.contains("aria-visible")) {
+        topNavContainer.classList.remove("aria-visible");
+        topNavContainer.classList.add("aria-hidden");
+      }
+    });
+  }
 }
 
-customElements.define('mini-button', MiniButton, {extends: 'button'});
+customElements.define("mini-button", MiniButton, { extends: "button" });
