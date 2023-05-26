@@ -281,7 +281,7 @@ SMALLER DEVICES
                     article {
                         margin: 60px 25px 0 25px;
                         padding-bottom: 30px;
-                        height: 550px;
+                        height: 60vh;
                     }
                 }
             }
@@ -340,7 +340,7 @@ SMALLER DEVICES
 }
 
 @media screen and (max-width: 1170px) {
-    
+
     //about page
     about-page {
 
@@ -388,22 +388,6 @@ SMALLER DEVICES
 
             .slider {
                 @include flex-box--column();
-
-                #slider--text-container {
-                    text-align: center;
-                    width: 300px !important;
-                    padding: 10px 20px;
-                }
-
-                .slide-container {
-                    display: none;
-                }
-
-                .mini-slide-container {
-                    display: block;
-                    @include flex-box--column();
-                    width: 100%;
-                }
             }
         }
 
@@ -725,9 +709,15 @@ SMALLER DEVICES
                 }
             }
 
+            ab-gallery {
+                .slider {
+                    padding: 20px 40px;
+                }
+            }
+
             ab-video {
                 .intro-video-container {
-                    padding: 30px 25px 150px 25px;
+                    padding: 100px 25px 150px 25px;
 
 
                     .intro--video {
@@ -997,25 +987,6 @@ SMALLER DEVICES
                     }
                 }
             }
-
-            ab-gallery {
-
-                .slider {
-                    @include flex-box--column();
-
-
-                    .mini-slide-container {
-                        display: block;
-                        @include flex-box--column();
-                        width: 100%;
-
-                        img {
-                            width: 350px;
-                            height: 250px;
-                        }
-                    }
-                }
-            }
         }
     }
 
@@ -1198,12 +1169,15 @@ SMALLER DEVICES
             ab-gallery {
                 .slider {
                     @include flex-box--column();
+                    padding: 20px 25px;
 
-                    .mini-slide-container {
-
-                        img {
-                            width: 300px;
-                            height: 200px;
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                img {
+                                    object-fit: contain;
+                                }
+                            }
                         }
                     }
                 }
@@ -1499,15 +1473,18 @@ SMALLER DEVICES
                 }
             }
 
+            //gallery
             ab-gallery {
                 .slider {
                     @include flex-box--column();
 
-                    .mini-slide-container {
-
-                        img {
-                            width: 250px;
-                            height: 180px;
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                img {
+                                    height: 250px;
+                                }
+                            }
                         }
                     }
                 }
@@ -1515,7 +1492,6 @@ SMALLER DEVICES
 
             ab-video {
                 .intro-video-container {
-
                     .intro--video {
                         iframe {
                             border: 1px solid #004021;

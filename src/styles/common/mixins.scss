@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+@mixin flex-box--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin flex-box--column {
     display: flex;
     justify-content: space-between;
