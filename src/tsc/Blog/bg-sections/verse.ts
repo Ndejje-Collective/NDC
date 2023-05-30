@@ -31,6 +31,7 @@ export class Verse extends HTMLElement {
     window.onload = function () {
       let day = new Date().getDay();
       let text: Array<string> = [
+        "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.",
         "For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation to every one that believeth; to the Jew first, and also to the Greek.",
         "For therein is the righteousness of God revealed from faith to faith: as it is written, The just shall live by faith.",
         "Rejoice in the Lord, O ye righteous: for praise is comely for the upright.",
@@ -39,7 +40,8 @@ export class Verse extends HTMLElement {
         "Every man according as he purposeth in his heart, so let him give; not grudgingly, or of necessity: for God loveth a cheerful giver.",
         " Count it all joy, my brethren, when ye fall into manifold temptations",
       ];
-      verseOfTheDay.innerHTML = text[day - 1];
+      verseOfTheDay.innerHTML = text[day];
+
     };
   }
 }

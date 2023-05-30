@@ -66,6 +66,7 @@ module.exports = {
                 // }
             },
 
+
             //FOR THE FONTS
             {
                 test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
@@ -76,7 +77,8 @@ module.exports = {
                             name: '[path][name].[ext]',
                             outputPath: 'fonts',
                         }
-                    }
+                    },
+
                 ]
             },
         ]

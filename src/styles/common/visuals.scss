@@ -18,14 +18,17 @@ $fs-70: 70px;
     font-style: normal;
     font-weight: normal;
     src: url('../../assets/fonts/Inter-Medium.otf'); // format('otf'),
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Inter-semiBold';
     src: url('../../assets/fonts/Inter-SemiBold.otf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Inter-extraLight';
     src: url('../../assets/fonts/Inter-ExtraLight.otf');
+    font-display: swap;
 }
