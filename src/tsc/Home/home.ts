@@ -17,6 +17,9 @@ import './hm-sections/commitment';
 import './hm-sections/timeline';
 
 
+// import '@webcomponents/webcomponentsjs';
+
+
 
 let HmTemplate = document.createElement('template');
 HmTemplate.innerHTML = `

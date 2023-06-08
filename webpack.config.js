@@ -7,7 +7,7 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const page = ['index', 'about', 'blog'];
 
 module.exports = {
-    mode: 'production',
+    mode: 'production', //production for publishing //development for developing
     entry: page.reduce((config, page) => {
         config[page] = `./src/tscBase/${page}.ts`;
         return config;
