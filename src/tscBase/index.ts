@@ -4,6 +4,11 @@
 */
 
 /*
+    TO SUPPORT OLDER BROWSER WEB COMPONENT COMPATIBILITY
+*/
+
+
+/*
     OBSERVER API
 */   
 import '../tsc/observerApi';
