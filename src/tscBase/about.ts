@@ -3,11 +3,6 @@
     INDEX FILE
 */
 
-// /*
-//     THE POLYFILLS TO SUPPORT WEB COMPONENT COMPATIBILTY IN OLDER BROWSERS 
-// // */
-// import '@webcomponents/webcomponentsjs/webcomponents-loader.js';
-
 
 /*
     STYLES
